@@ -1,1 +1,7 @@
 <p>products works!</p>
+
+<a [routerLink]="['/product', product.id]" class="btn btn-success btn-lg">Show Product Details</a>
+
+<hr>
+
+<a (click)="gotoDetails(product.id)" class="btn btn-secondary btn-lg">go to Details</a>
