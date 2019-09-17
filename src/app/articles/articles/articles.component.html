@@ -1,3 +1,7 @@
 <p>articles works!</p>
 <a [routerLink]="['/article', article.id]" class="btn btn-success btn-lg">Show Details</a>
 
+<hr>
+<p>An alternative way, we can navigate from articles to article details view with params programmatically using Typescript code</p>
+<a (click)="gotoDetails(article.id)" class="btn btn-secondary btn-lg">Show Details</a>
+
